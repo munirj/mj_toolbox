@@ -12,8 +12,4 @@ def try_me():
     mins = ((demo_day - now) % timedelta(hours=1)) / timedelta(minutes=1)
     secs = ((demo_day - now) % timedelta(minutes=1)) / timedelta(seconds=1)
 
-    print(
-        f'It is {days:.0f} days, {hours:.0f} hours, {mins:.0f} minutes and {secs:.0f} seconds to demo day...'
-    )
-
-try_me()
+    return f'It is {days:.0f} days, {hours:.0f} hours, {mins:.0f} minutes and {secs:.0f} seconds to demo day...'
